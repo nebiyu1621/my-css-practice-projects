@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+    <style>
+        article > p::first-line{
+            color: lightcoral;
+            letter-spacing: 3px;
+            color: lightgreen;
+        }
+        article > p::first-letter{
+             color: lightcoral;
+             font-size: 36px;
+        } 
+        article > p::selection{
+            background-color:  lightcoral;
+            color: black;
+        }
+        article > p::before{
+            content: "'";
+        }
+        article > p::after{
+            content: "'";
+            color: lightcoral;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+
+    <article>
+    <p>  
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero numquam maxime? Eos, illo? Corporis pariatur magni veniam aut, mollitia aliquam non delectus facere necessitatibus magnam sint veritatis obcaecati qui.</p>
+    
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero numquam maxime? Eos, illo? Corporis pariatur magni veniam aut, mollitia aliquam non delectus facere necessitatibus magnam sint veritatis obcaecati qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero numquam maxime? Eos, illo? Corporis pariatur magni veniam aut, mollitia aliquam non delectus facere necessitatibus magnam sint veritatis obcaecati qui.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero numquam maxime? Eos, illo? Corporis pariatur magni veniam aut, mollitia aliquam non delectus facere necessitatibus magnam sint veritatis obcaecati qui.</p>
+
+    </article>
+    
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ex sunt debitis et molestiae dicta explicabo molestias neque veritatis, dolorem cum ratione nihil a illum, deserunt corporis. Consectetur, molestiae at.</p></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id delectus officia quos sed eius, sapiente facere pariatur nemo iusto quasi expedita itaque a cupiditate ducimus, tempora soluta? Sint, dolore.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus explicabo quo sequi culpa fuga corporis a eius est, sit sapiente obcaecati omnis autem corrupti eos enim, expedita tempora dicta quia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dolores vero fuga corrupti a natus ipsum possimus architecto ea atque sapiente harum animi tempora, maxime facere. Hic, ipsam. Quibusdam, accusamus!</p>
+    </article>
+    
+</body>
+</html>
+
+
+
+
+
+<!-- used to style specific type of html element  -->
+
+<!-- pseudo elements -->
+<!-- ::after ::before ::first-letter ::first-line ::selection -->
+<!-- ::first-line -->
+<!-- 1) used to style first line of text in block element like (<p>) - div , h1  -->
